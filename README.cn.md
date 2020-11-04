@@ -7,7 +7,7 @@
 - `EFI` OC 配置，已清除了 MLB, SN, UUID 需要添加后使用.
 - `VBIOS` 用于旌宇 RX560 的 VBIOS, 分为原版和打过 GOP 补丁支持 UEFI 引导的版本.
 
-## 教程
+## 笔记
 
 - [解锁 CFG Lock](/CFGLock.cn.md)
 
@@ -18,7 +18,7 @@
 | CPU       | Intel i5-8500                                    |         |
 | 主板      | B360                                             |         |
 | 内存      | DDR4 2666 16G x2                                 |         |
-| 显卡      | Intel UHD630^1^ + 旌宇 RX560 4GB 4x mDP ^2^ 半高 |         |
+| 显卡      | Intel UHD630 + 旌宇 RX560 4GB 4x mDP 半高        |         |
 | WiFi&蓝牙 | BCM943602CS                                      |         |
 | 硬盘      | 西数 SN550 1TB                                   |         |
 
@@ -58,3 +58,15 @@
 
 1. 使用 macOS 11 时需要把 `config.plist` 中的 `SecureBootModel` 设为 `Disabled`.
 2. 安装 macOS 11 或者使用 macOS 11 Recovery 时需要设置 `prev-lang:kbd`为 `en-US:0`, 使用 `zh-Hans:252` 会出现灰屏问题. 安装完成后可以改回 `zh-Hans:252`.
+
+
+## Changelog
+
+- 2020-11-05
+  - 升级 OpenCore 0.6.3
+  - 添加 NVMeFix
+  - 添加 CFGLock 相关
+  - 升级 Lilu, WhatEverGreen, AppleALC, VirtualSMC
+
+- 2020-10-28
+  - 基于 OpenCore 0.6.2, 所有功能正常

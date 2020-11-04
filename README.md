@@ -7,7 +7,7 @@
 - `EFI` OC config, you have to fill your own MLB, SN, UUID.
 - `VBIOS` for Sparkle RX560.
 
-## 教程
+## Notes
 
 - [Unlock CFG Lock](/CFGLock.md)
 
@@ -18,7 +18,7 @@
 | CPU            | Intel i5-8500                                     |         |
 | Motherboard    | B360                                              |         |
 | RAM            | DDR4 2666 16G x2                                  |         |
-| Graphics       | Intel UHD630^1^ + Sparkle RX560 4GB LP 4x mDP ^2^ |         |
+| Graphics       | Intel UHD630 + Sparkle RX560 4GB LP 4x mDP        |         |
 | WiFi&BlueTooth | BCM943602CS                                       |         |
 | Storage        | WD SN550 1TB                                      |         |
 
@@ -58,3 +58,13 @@ Everything is working now.
 1. when using macOS 11, you have to set `SecureBootModel` to `Disabled`.
 
 
+## Changelog
+
+- 2020-11-05
+  - Upgrade OpenCore to 0.6.3
+  - Add NVMeFix
+  - Add CFGLock relate resources
+  - Upgrade Lilu, WhatEverGreen, AppleALC, VirtualSMC
+
+- 2020-10-28
+  - Add OpenCore 0.6.2, everything works fine.
