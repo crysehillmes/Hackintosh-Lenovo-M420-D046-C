@@ -7,6 +7,10 @@
 - `EFI` OC 配置，已清除了 MLB, SN, UUID 需要添加后使用.
 - `VBIOS` 用于旌宇 RX560 的 VBIOS, 分为原版和打过 GOP 补丁支持 UEFI 引导的版本.
 
+## 教程
+
+- [解锁 CFG Lock](/CFGLock.cn.md)
+
 ## 硬件:
 
 | 组件      | 型号                                             | 备注    |
@@ -27,6 +31,7 @@
 所有功能都能完美正常使用
 
 - [x] 已测试系统版本
+  - [x] macOS 11.0.1 Big Sur Beta
   - [x] macOS 11 Big Sur Beta 10
   - [x] macOS 10.15.7 Catalina
   - [x] macOS 10.15.6 Catalina

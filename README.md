@@ -7,6 +7,10 @@
 - `EFI` OC config, you have to fill your own MLB, SN, UUID.
 - `VBIOS` for Sparkle RX560.
 
+## 教程
+
+- [Unlock CFG Lock](/CFGLock.md)
+
 ## Hardwares:
 
 | Component      | Model                                             | Remarks |
@@ -26,6 +30,7 @@
 Everything is working now. 
 
 - [x] Tested macOS version:
+  - [x] macOS 11.0.1 Big Sur Beta
   - [x] macOS 11 Big Sur Beta 10
   - [x] macOS 10.15.7 Catalina
   - [x] macOS 10.15.6 Catalina
