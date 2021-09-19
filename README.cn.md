@@ -25,13 +25,14 @@
 
 > 1. 如果使用核显 UHD630, 删除 `config.plist` 然后重命名 `config-iGPU.plist` 为 `config.plist`.
 > 2. 旌宇 RX560 默认的 VBIOS 不支持 UEFI GOP, 因此在开启 UEFI 时除非系统引导完成，这之前只能看到黑屏. 可以自己给 VBIOS 打 GOP 补丁, 打完后可以正常使用，仅在开机通电或者关机断电的瞬间会花一下，其他时候使用完全正常. 打过补丁的 VBIOS 放在了 `VBIOS` 路径下.
+> 3. `config-dGPU-xxx-powerplay.plist` 通过 OpenCore 修改了 VBIOS 中的功耗和风扇曲线，解决 RX560 刀卡在 M420 机箱中散热和噪音的平衡, 不直接修改 VBIOS 是因为可能造成 GOP 失效.
 
 
 ## 功能:
 所有功能都能完美正常使用
 
 - [x] 已测试系统版本
-  - [x] macOS 11.0.1 Big Sur Beta
+  - [x] macOS 11.0 ~ 11.6 Big Sur
   - [x] macOS 11 Big Sur Beta 10
   - [x] macOS 10.15.7 Catalina
   - [x] macOS 10.15.6 Catalina
@@ -61,6 +62,12 @@
 
 
 ## Changelog
+
+- 2021-09-20
+  - 升级 OpenCore 0.7.3
+  - 升级了所有 kext 到最新
+
+- ... 中间版本偷懒了
 
 - 2020-11-05
   - 升级 OpenCore 0.6.3

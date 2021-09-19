@@ -24,13 +24,13 @@
 
 > 1. If you only use iGPU, just delete `config.plist` and rename `config-iGPU.plist` to `config.plist`.
 > 2. Sparkle RX560 default VBIOS does not support UEFI GOP, so you will only see black screen before OS boot. You can patch VBIOS GOP by yourself and it will work properly(Maybe have glitches when machine poweron or poweroff but no other glitches). You can find patched VBIOS in `VBIOS` folder.
-
+> 3. `config-dGPU-xxx-powerplay.plist` modify VBIOS power and fan policy in order to make RX560 thermal and noise balanced. DO NOT modify VBIOS directly, it may corrupt GOP patch.
 
 ## Features:
 Everything is working now. 
 
 - [x] Tested macOS version:
-  - [x] macOS 11.0.1 Big Sur Beta
+  - [x] macOS 11.0 ~ 11.6 Big Sur
   - [x] macOS 11 Big Sur Beta 10
   - [x] macOS 10.15.7 Catalina
   - [x] macOS 10.15.6 Catalina
@@ -59,6 +59,10 @@ Everything is working now.
 
 
 ## Changelog
+
+- 2021-09-20
+  - Upgrade OpenCore to 0.7.3
+  - Upgrade all kexts
 
 - 2020-11-05
   - Upgrade OpenCore to 0.6.3
